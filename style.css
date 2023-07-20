@@ -43,8 +43,25 @@ html{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
+#one:hover{
+  transform: scale(1.05);
+  filter: brightness(1.5) grayscale(100%);
+}
+
+#user_image{
+  margin: 20px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+#user_image:hover{
+  transform: scale(1.1);
+  filter: contrast(200%) blur(4px);
+}
 
 #logo h3 {
   margin: 50px;
@@ -415,4 +432,10 @@ margin: 10px;
   font-size: 16px;
   display: flex;
   margin: 2px;
+}
+
+.labell{
+  margin : 1em;
+  font-weight: 1000;
+  letter-spacing: 2px;
 }
