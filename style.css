@@ -209,6 +209,19 @@ margin: 10px;
   align-items: center;
 }
 
+.song > h1{
+  font-size: 16px;
+}
+
+.date{
+ font-family: monospace;
+}
+
+.ellipsis > h3{
+  font-size: 12px;
+  font-family: monospace;
+}
+
 .song> img {
   width: 100px;
   height: 70px;
@@ -397,6 +410,9 @@ margin: 10px;
 }
 
 .track h3{
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 16px;
   display: flex;
   margin: 2px;
 }
