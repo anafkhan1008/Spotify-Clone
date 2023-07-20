@@ -23,6 +23,7 @@ html{
   overflow-y: hidden;
   padding: 10px;
   white-space: nowrap;
+  cursor:pointer;
 }
 
 #logo {
@@ -225,6 +226,9 @@ margin: 10px;
   transform: scale(2);
   transition:  500ms;
   cursor: pointer;
+}
+.song-name{
+    font-style: italic;
 }
 
 .song:hover img{
