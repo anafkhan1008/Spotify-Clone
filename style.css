@@ -168,8 +168,9 @@ main{
 
 #left{
 width: 65vw;
-overflow: auto;
-height: 90vh;
+overflow-y:scroll;
+overflow-x: hidden;
+height: 100vh;
 margin: 10px;
 
 }
@@ -413,8 +414,7 @@ margin: 10px;
 #latest{
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: auto;
   padding: 2em;
 }
 
