@@ -23,7 +23,6 @@ html{
   overflow-y: hidden;
   padding: 10px;
   white-space: nowrap;
-  cursor:pointer;
 }
 
 #logo {
@@ -44,8 +43,25 @@ html{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
+#one:hover{
+  transform: scale(1.05);
+  filter: brightness(1.5) grayscale(100%);
+}
+
+#user_image{
+  margin: 20px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+#user_image:hover{
+  transform: scale(1.1);
+  filter: contrast(200%) blur(4px);
+}
 
 #logo h3 {
   margin: 50px;
@@ -152,7 +168,8 @@ main{
 
 #left{
 width: 65vw;
-overflow: auto;
+overflow-y:scroll;
+overflow-x: hidden;
 height: 100vh;
 margin: 10px;
 
@@ -193,6 +210,8 @@ margin: 10px;
 
 
 .release-item {
+  font-style: italic;
+  font-weight: 100;
   display: flex;
   flex-direction: row;
   width: 30vw;
@@ -206,6 +225,27 @@ margin: 10px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.song > h1{
+  font-size: 16px;
+}
+
+.date{
+ font-family: monospace;
+}
+
+.ellipsis > h3{
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.ellipsis{
+  cursor: pointer;
+}
+
+.ellipsis:hover{
+  color: rgb(6, 250, 34);
 }
 
 .song> img {
@@ -227,9 +267,6 @@ margin: 10px;
   transition:  500ms;
   cursor: pointer;
 }
-.song-name{
-    font-style: italic;
-}
 
 .song:hover img{
   transform: scale(1.05);
@@ -248,7 +285,7 @@ margin: 10px;
 }
 
 #list{
-  height: 80vh;
+  height: 70vh;
   display: flex;
   overflow-y: scroll;
   flex-direction: column;
@@ -332,11 +369,12 @@ margin: 10px;
 }
 
 .music_cat{
-  height: 25vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   flex-direction: row;
-  overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
   margin: 30px;
   scrollbar-width: none;
@@ -364,15 +402,19 @@ margin: 10px;
   }
   
   ::-webkit-scrollbar-thumb {
+    border: 5px solid transparent;
     border-radius: 25px;
-    background-color: rgb(56, 55, 55);
-    box-shadow: inset 0 0 6px rgba(19, 19, 14, 0.3);
+    background-color: rgb(4, 121, 6);
+    box-shadow: inset 0 0 6px rgba(93, 227, 5, 0.967);
+    background-clip: content-box;
   }
+
+
 
 #latest{
   display: flex;
   flex-direction: row;
-  overflow-y: scroll;
+  overflow: auto;
   padding: 2em;
 }
 
@@ -384,6 +426,7 @@ margin: 10px;
   margin: 1em;
 
 }
+
 
 .track img{
   height: 200px;
@@ -399,6 +442,20 @@ margin: 10px;
 }
 
 .track h3{
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 16px;
   display: flex;
   margin: 2px;
+}
+
+.labell{
+  margin : 1em;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.labell span{
+  color: rgb(4, 172, 1);
 }
